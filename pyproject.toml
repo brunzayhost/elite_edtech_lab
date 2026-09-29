@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "elite-edtech-lab"
+version = "0.1.0"
+description = "Local multi-agent lesson-plan generator (Ollama + Nextcloud), Hong Kong context"
+authors = ["brunzayhost"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+requests = "^2.32"
+pydantic = "^2.7"
+streamlit = "^1.38"
+bcrypt = "^4.2"
+# Optional Traditional Chinese (Hong Kong) check used by ollama_client.looks_traditional
+opencc-python-reimplemented = "^0.1.7"
+
+[build-system]
+requires = ["poetry-core>=1.9"]
+build-backend = "poetry.core.masonry.api"
